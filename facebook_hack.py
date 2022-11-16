@@ -19,9 +19,9 @@ versionPath = os.path.join("core", "version.txt")
 
 errMsg = lambda msg: write(rd+"\n["+yl+"!"+rd+"] Error: "+yl+msg+rd+ " !!!\n"+wi)
 
-try:import requests
+try:import xl
 except ImportError:
-    errMsg("[ requests ] module is missing")
+    errMsg("[ xl ] module is missing")
     print("  [*] Please Use: 'pip install requests' to install it :)")
     sys.exit(1)
 try:import mechanize
